@@ -1,0 +1,79 @@
+.hidden {
+    display: none;
+}
+.selector-item {
+    display: inline-block;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+.selector-item em {
+    font-style: normal;
+    vertical-align: top;
+    margin-left: 3px;
+    line-height: 24px;
+}
+.color-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.selector-item:hover, .selector-item.active {
+    background: rgba(232, 232, 232, 0.5);
+    border-radius: 5px;
+    box-shadow: 0 1px 1px #CCC;
+}
+i.cross {
+    color: #000;
+    margin-left: 3px;
+    font-size: 11px;
+    cursor: pointer;
+}
+i.cross-icon::before{
+	content: "\2716";
+}
+.select-text {
+    border-radius: 5px;
+    padding: 3px;
+}
+.modal-custom {
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.modal-custom-container {
+    background: #FFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    padding: 10px;
+}
+.modal-custom-container .modal-header h3 {
+    font-size: 20px;
+}
+.modal-custom-container .modal-header .close-modal {
+    cursor: pointer;
+}
+.modal-custom-container .modal-content {
+    border: none;
+}
+.modal-custom-container .modal-content .sub-item-container {
+    text-align: center;
+}
+.modal-custom-container .modal-content .selector-item {
+    width: 50%;
+    box-shadow: 0 1px 1px #CCC;
+    margin: 5px 0;
+}
+.modal-custom-container .modal-content .no-item-exists {
+    text-align: center;
+    padding: 5px;
+    color: #ffb4b4;
+    font-size: 16px;
+}
